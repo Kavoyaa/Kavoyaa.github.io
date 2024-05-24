@@ -1,0 +1,15 @@
+html {
+    background-color: #1A1B26;
+    color: #8689a3;
+    font-family: "Roboto Mono", monospace;
+}
+
+.centered {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* #787C99*/
