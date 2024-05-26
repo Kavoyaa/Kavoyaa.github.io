@@ -1,15 +1,87 @@
+:root {
+    --primary: #f1ce7c;
+    --secondary: #d1cbc5;
+    --background: #181820;
+}
+
+* {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 360;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    line-height: 1.75;
+}
+
+.bold {
+    font-weight: 700;
+}
+
 html {
-    background-color: #1A1B26;
-    color: #8689a3;
-    font-family: "Roboto Mono", monospace;
+    background-color: var(--background);
+    color: var(--secondary);
+    background-image: url("grid.png");
+    background-size: cover;
+    background-position: center, center;
+    background-repeat: repeat;
+    height: max-content;
 }
 
-.centered {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.primarycolor {
+    color: var(--primary)
 }
 
-/* #787C99*/
+a {
+    text-decoration: inherit;
+    color: var(--secondary)
+}
+
+a:hover {
+    color: var(--primary);
+    font-weight: 420;
+}
+
+
+
+.layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+
+.nav-options {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2ch;
+}
+
+@media only screen and (max-width: 470px) {
+    /* For mobile phones: */
+    .nav-options {
+      gap: 1ch;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        padding-left: 0.4rem;
+        padding-right: 0.3rem;
+        padding-bottom: 2rem;
+    }
+  }
+
+.block {
+    margin: auto;
+    max-width: 65ch;
+}
