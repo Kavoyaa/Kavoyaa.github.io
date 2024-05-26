@@ -1,14 +1,14 @@
 :root {
-    --primary: #f1ce7c;
-    --secondary: #dad5d1;
-    --background: #181820;
+    --primary: #fdd880;
+    --secondary: #c0c0c0;
+    --background: #12121a;
     
 }
 
 * {
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 360;
+    font-weight: 400;
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
@@ -24,22 +24,30 @@ html {
     color: var(--secondary);
     background-image: url("grid.png");
     background-position: center, center;
-    
-    height: max-content;
+    height: 100%;
+}
+
+p {
+    font-weight: 410;
 }
 
 .primarycolor {
     color: var(--primary)
 }
 
-a {
-    text-decoration: inherit;
+.nav-btn {
+    text-decoration: none;
     color: var(--secondary)
 }
 
-a:hover {
+.nav-btn:hover {
     color: var(--primary);
-    font-weight: 420;
+}
+
+.hyperlink {
+    color: rgb(240, 248, 255);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--primary);
 }
 
 
