@@ -27,6 +27,11 @@ html {
     height: 100%;
 }
 
+body {
+    height: 100%;
+    margin: 0px;
+}
+
 p {
     font-weight: 410;
 }
@@ -50,6 +55,10 @@ p {
     border-bottom: 1px dashed var(--primary);
 }
 
+.hyperlink:hover {
+    color: var(--primary);
+}
+
 
 
 .layout {
@@ -61,8 +70,8 @@ p {
     display: flex;
     justify-content: space-between;
     text-decoration: none;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     padding-bottom: 2rem;
 }
 
@@ -74,17 +83,13 @@ p {
     gap: 2ch;
 }
 
-@media only screen and (max-width: 470px) {
-
-    .nav-options {
-      gap: 1ch;
-    }
+@media only screen and (max-width: 700px) {
     .navbar {
         display: flex;
         justify-content: space-between;
         text-decoration: none;
-        padding-left: 0.3rem;
-        padding-right: 0.3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
         padding-bottom: 2rem;
     }
 }
@@ -94,12 +99,9 @@ p {
     max-width: 65ch;
 }
 
-@media only screen and (max-width: 585px) {
-
+@media only screen and (max-width: 620px) {
     .block {
-        margin: auto;
-        max-width: 65ch;
-        padding-left: 3px;
-        padding-right: 3px;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
