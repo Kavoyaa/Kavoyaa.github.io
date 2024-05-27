@@ -1,0 +1,107 @@
+:root {
+    --primary: #fdd880;
+    --secondary: #c0c0c0;
+    --background: #12121a;
+    
+}
+
+* {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    line-height: 1.75;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+html {
+    background-color: var(--background);
+    color: var(--secondary);
+    background-image: url("grid.png");
+    background-position: center, center;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0px;
+}
+
+p {
+    font-weight: 410;
+}
+
+.primarycolor {
+    color: var(--primary)
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: var(--secondary)
+}
+
+.nav-btn:hover {
+    color: var(--primary);
+}
+
+.hyperlink {
+    color: rgb(240, 248, 255);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--primary);
+}
+
+.hyperlink:hover {
+    color: var(--primary);
+}
+
+
+
+.layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+}
+
+
+
+.nav-options {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2ch;
+}
+
+@media only screen and (max-width: 700px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.block {
+    margin: auto;
+    max-width: 65ch;
+}
+
+@media only screen and (max-width: 620px) {
+    .block {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
