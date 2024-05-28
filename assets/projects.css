@@ -73,14 +73,14 @@ p {
 
 @media only screen and (max-width: 940px) {
     .grid {
-        grid-template-columns: 31ch 31ch;
+        grid-template-columns: 32ch 32ch;
         row-gap: 25px;
     }
 }
 
-@media only screen and (max-width: 610px) {
+@media only screen and (max-width: 635px) {
     .grid {
-        grid-template-columns: 31ch;
+        grid-template-columns: 35ch;
         row-gap: 19px;
     }
 }
@@ -88,12 +88,10 @@ p {
 .container {
     display: flex;
     justify-content: center;
-    /* border: 1px solid aliceblue   */
 }
 
 .item {
     text-decoration: none;
-    /* border: 1px solid; */
     background-color: rgba(185, 185, 185, 0.042);
     padding-top: 2px;
     padding-bottom: 2px;
@@ -101,13 +99,12 @@ p {
     padding-left: 4px;
     border-radius: 6px;
     border: 2px solid rgba(185, 185, 185, 0);
-    backdrop-filter: blur(0.225rem);
-    -webkit-backdrop-filter: blur(0.225rem);
+    backdrop-filter: blur(0.22rem);
+    -webkit-backdrop-filter: blur(0.22rem);
 }
 
 .item:hover {
     background-color: rgba(71, 71, 71, 0.5);
-    /* border: 2px solid #ffd77b5d; */
 }
 
 .name {
@@ -136,9 +133,6 @@ p {
 
 @media only screen and (max-width: 700px) {
     .navbar {
-        display: flex;
-        justify-content: space-between;
-        text-decoration: none;
         padding-left: 1rem;
         padding-right: 1rem;
         padding-bottom: 2rem;
