@@ -59,8 +59,6 @@ p {
     color: var(--primary);
 }
 
-
-
 .layout {
     display: flex;
     flex-direction: column;
@@ -75,8 +73,6 @@ p {
     padding-bottom: 3rem;
 }
 
-
-
 .nav-options {
     display: flex;
     justify-content: flex-end;
@@ -85,9 +81,6 @@ p {
 
 @media only screen and (max-width: 700px) {
     .navbar {
-        display: flex;
-        justify-content: space-between;
-        text-decoration: none;
         padding-left: 1rem;
         padding-right: 1rem;
         padding-bottom: 2rem;
