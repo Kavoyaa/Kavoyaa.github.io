@@ -1,10 +1,7 @@
 :root {
-    /* --primary: #ffc23d; */
     --primary: #dd9912;
     --secondary: #BDC5D4;
-    /* --background: #12121a; */
     --background: #0B0F12;
-    /* --hyperlink: #ffffff; */
     --hyperlink: #eef4ff;
 }
 
@@ -13,8 +10,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-variation-settings:
-      "width" 100;
+    font-variation-settings: "width" 100;
     line-height: 1.75;
 }
 
@@ -87,7 +83,7 @@ body {
 
 .bold-txt {
     font-weight: 700;
-    font-size: 33px;
+    font-size: 35px;
 }
 
 .regular-txt {
@@ -113,7 +109,8 @@ body {
     padding-left: 3rem;
     padding-right: 3rem;
     margin-bottom: 2.5rem;
-    background: color-mix(in srgb, var(--background) 92%, transparent);
+    background-image: linear-gradient(var(--background), 70% ,transparent);
+    /* backdrop-filter: blur(1px); */
 }
 
 .nav-options {
@@ -122,11 +119,18 @@ body {
     gap: 3.5ch;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 710px) {
     .navbar {
         padding-left: 1rem;
         padding-right: 1rem;
-        max-height: 100px;
+        background-image: linear-gradient(var(--background), 91% ,transparent);
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .navbar {
+        background-image: linear-gradient(var(--background), 88% ,transparent);
+
     }
 }
 
@@ -146,6 +150,24 @@ body {
     }
 }
 
+.engraved {
+    text-shadow: 1px 1px color-mix(in srgb, #0B0F12 52%, var(--primary) 48%),
+    2px 2px color-mix(in srgb, #0B0F12 52%, var(--primary) 48%),
+    3px 3px color-mix(in srgb, #0B0F12 52%, var(--primary) 48%),
+    4px 4px color-mix(in srgb, #0B0F12 52%, var(--primary) 48%),
+    5px 5px color-mix(in srgb, #0B0F12 52%, var(--primary) 48%),
+    8px 9px 10px black;
+}
+
+/* .outline-txt {
+    text-shadow: 0px 2px var(--secondary),
+    0px -2px var(--secondary),
+    2px 0px var(--secondary),
+    -2px 0px var(--secondary),
+    2px 2px var(--secondary),
+    -2px -2px var(--secondary);
+} */
+
 .transition {
     background-image: url("transition.svg");
     aspect-ratio: 2000/300;
@@ -154,6 +176,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 3ch;
+
+    filter: drop-shadow(1px 1px color-mix(in srgb, #0B0F12 52%, var(--primary) 48%))
+    drop-shadow(1px 2px color-mix(in srgb, #0B0F12 52%, var(--primary) 48%))
+    drop-shadow(2px 3px color-mix(in srgb, #0B0F12 52%, var(--primary) 48%))
+    drop-shadow(2px 4px color-mix(in srgb, #0B0F12 52%, var(--primary) 48%))
+    drop-shadow(3px 4px color-mix(in srgb, #0B0F12 52%, var(--primary) 48%))
+    drop-shadow(3px 5px color-mix(in srgb, #0B0F12 52%, var(--primary) 48%))
+    drop-shadow(7px 10px 11px black);
 }
 
 .skills {
