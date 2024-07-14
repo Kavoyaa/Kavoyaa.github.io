@@ -26,6 +26,10 @@ body {
     margin: 0px;
 }
 
+h3 {
+    font-size: 17.5px;
+}
+
 /* custom scrollbar */
 /* width */
 ::-webkit-scrollbar {
@@ -56,18 +60,13 @@ body {
     color: var(--background)
 }
 
+.grid-bg {
+    background-image: url("grid.png");
+    background-position: center, center;
+}
+
 .primarybg {
     background-color: var(--primary);
-}
-
-.nav-btn {
-    text-decoration: none;
-    color: var(--secondary);
-    cursor: pointer;
-}
-
-.nav-btn:hover {
-    color: var(--primary);
 }
 
 .hyperlink {
@@ -81,17 +80,22 @@ body {
     color: var(--primary);
 }
 
-.bold-txt {
+.title-txt {
+    font-size: 40px;
     font-weight: 700;
-    font-size: 35px;
+}
+
+.bold-txt {
+    font-weight: 650;
+    font-size: 37px;
 }
 
 .regular-txt {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .small-txt {
-    font-size: 14px; 
+    font-size: 16px; 
 }
 
 .layout {
@@ -102,7 +106,7 @@ body {
 .navbar {
     display: flex;
     position: sticky;
-    z-index: 1;
+    z-index: 0;
     top: 0;
     justify-content: space-between;
     text-decoration: none;
@@ -116,6 +120,18 @@ body {
     display: flex;
     justify-content: flex-end;
     gap: 3.5ch;
+    
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    color: var(--primary);
+    transition: 0.08s;
 }
 
 .block {
@@ -123,9 +139,9 @@ body {
     margin-right: auto;
     margin-top: 4%;
     max-width: 65ch;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
-
-
 
 .engraved {
     text-shadow: 1px 1px color-mix(in srgb, #0B0F12 55%, var(--primary) 45%),
@@ -136,14 +152,6 @@ body {
     8px 9px 13px black;
 }
 
-/* .outline-txt {
-    text-shadow: 0px 2px var(--secondary),
-    0px -2px var(--secondary),
-    2px 0px var(--secondary),
-    -2px 0px var(--secondary),
-    2px 2px var(--secondary),
-    -2px -2px var(--secondary);
-} */
 
 .transition {
     background-image: url("transition.svg");
@@ -160,6 +168,8 @@ body {
     drop-shadow(2.5px 4px color-mix(in srgb, #0B0F12 52%, var(--primary) 48%))
     drop-shadow(2.5px 5px color-mix(in srgb, #0B0F12 52%, var(--primary) 48%))
     drop-shadow(7.5px 15px 15px black);
+
+    
 }
 
 .skills {
@@ -167,30 +177,46 @@ body {
     height: 100%;
 }
 
-/* for mobiles */
-@media only screen and (max-width: 620px) {
+/* for mobiles (portrait mode) */
+@media only screen and (max-width: 480px) {
     .block {
-        padding-left: 1rem;
-        padding-right: 1rem;
         margin-top: 0.5%;
     }
+
     .transition {
         aspect-ratio: 608/300;
     }
-}
 
-@media only screen and (max-width: 710px) and (min-width: 608px) {
     .navbar {
         padding-left: 1rem;
         padding-right: 1rem;
         background-image: linear-gradient(var(--background), 91% ,transparent);
     }
-    .transition {
-        aspect-ratio: 700/300;
+
+    .nav-options {
+        gap: 2.5ch;
     }
 }
 
-@media only screen and (max-width: 1040px) and (min-width: 710px) {
+/* for tablets */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .navbar {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        background-image: linear-gradient(var(--background), 91% ,transparent);
+    }
+
+    .transition {
+        aspect-ratio: 700/300;
+    }
+
+    .grid-bg {
+        background-size: 100%;
+    }
+}
+
+/* for idk */
+@media only screen and (min-width: 768px) {
     .navbar {
         background-image: linear-gradient(var(--background), 88% ,transparent);
     }
