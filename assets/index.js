@@ -2,7 +2,7 @@ const themes = {
   "light": {
       "primary": "#dd9912",
       "secondary": "#2a3241",
-      "background": "#dfe6ec",
+      "background": "#d2d6e3",
       "hyperlink": "#000000"
   },
   "dark": {

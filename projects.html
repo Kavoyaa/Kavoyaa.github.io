@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="grid-bg">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=z, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/021741cec3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/styles.css">
-    
-    <title>Hello!</title>
+    <title>My Projects</title>
   </head>
 <body>
   <section class="layout">
@@ -18,19 +17,174 @@
         <h3><a href="index.html" class="nav-btn">About</a></h3>
         <h3><a href="projects.html" class="nav-btn">Projects</a></h3>
       </div>
+
       <div class="nav-options">
         <h3 class="nav-btn" id="themeToggle">
             <i class="fa-solid fa-circle-half-stroke"></i>
         </h3>
-        <h3><a href="https://github.com/Kavoyaa" class="nav-btn" target="_blank" rel="noopener noreferrer">
+        <h3>
+          <a href="https://www.linkedin.com/in/kav-pandey/" class="nav-btn" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin fa-lg"></i>
+          </a>
+        </h3>
+        <h3>
+          <a href="https://github.com/Kavoyaa" class="nav-btn" target="_blank" rel="noopener noreferrer">
           <i class="fa-brands fa-github fa-lg"></i>
-        </a></h3>
+          </a>
+        </h3>
       </div>
     </div>
-    <div class="block">
-      <h1 class="primarycolor bold-txt" style="margin-bottom: 0px;">PROJECTS</h1>
-    </div>
+    
+    <h1 class="primarycolor title-txt" style="margin-bottom: 2ch; line-height: 1.5ch; text-align: center;">My Projects</h1>
+
+    <section class="grid-container">
+      <div class="grid-item-parent">
+        <img src="assets/images/portfoliosite.png" class="project-icon">
+        <div class="project-details">
+          <h3 class="project-name">Portfolio Website</h3>
+        </div>
+        <p class="project-desc">The website you're currently at!</p>
+        <div class="hidden-details">
+          <p class="project-skills" style="font-style: italic;">HTML | CSS | JavaScript</p>
+          <hr class="project-hr">
+          <p class="hidden-project-desc"><b style="font-weight: 650; color: var(--secondary); line-height: 16px;">Description: </b>A website to inform people about me and showcase my skills and projects.</p>
+
+          <div style="display: flex; flex-direction: row; gap: 14px; margin-top: -20px;">
+            <h3>
+              <a href="https://github.com/Kavoyaa/Kavoyaa.github.io" class="project-btn" target="_blank" rel="noopener noreferrer">
+              GitHub
+                <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+              </a>
+            </h3>
+            <h3>
+              <a href="https://kavoyaa.github.io/" class="project-btn" target="_blank" rel="noopener noreferrer">
+              Website
+                <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+              </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item-parent">
+        <img src="assets/images/zetext.png" class="project-icon">
+        <div class="project-details">
+          <h3 class="project-name">ZeText</h3>
+        </div>
+        <p class="project-desc">Code Editor</p>
+        <div class="hidden-details">
+          <p class="project-skills" style="font-style: italic;">Python</p>
+          <hr class="project-hr">
+          <p class="hidden-project-desc"><b style="font-weight: 650; color: var(--secondary); line-height: 16px;">Description: </b>A code editor made in Python using Tkinter. Features include file manipulation, image displaying, integrated output window, theming and keyboard shortcuts.</p>
+
+          <div style="display: flex; flex-direction: row; gap: 14px; margin-top: -20px;">
+            <h3>
+              <a href="https://github.com/Kavoyaa/ZeText" class="project-btn" target="_blank" rel="noopener noreferrer">
+              GitHub
+                <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+              </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+      
+      <div class="grid-item-parent">
+        <img src="assets/images/noimg.png" class="project-icon">
+        <div class="project-details">
+          <h3 class="project-name">Toggle Dock</h3>
+        </div>
+        <p class="project-desc">GNOME Shell Extension</p>
+        <div class="hidden-details">
+          <p class="project-skills" style="font-style: italic;">JavaScript</p>
+          <hr class="project-hr">
+          <p class="hidden-project-desc"><b style="font-weight: 650; color: var(--secondary); line-height: 16px;">Description: </b>A GNOME Shell extension with 22K+ downloads which adds a button to top panel to switch Dock mode between "always visible" and "autohide".</p>
+
+          <div style="display: flex; flex-direction: row; gap: 14px; margin-top: -20px;">
+            <h3>
+              <a href="https://www.github.com/kavoyaa/dock-toggle" class="project-btn" target="_blank" rel="noopener noreferrer">
+              GitHub
+                <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+              </a>
+            </h3>
+            <h3>
+              <a href="https://extensions.gnome.org/extension/4845/dash-to-dock-toggle/" class="project-btn" target="_blank" rel="noopener noreferrer">
+              Website
+                <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+              </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item-parent">
+        <img src="assets/images/economygame.png" class="project-icon">
+        <div class="project-details">
+          <h3 class="project-name">Economy Game</h3>
+        </div>
+        <p class="project-desc">Economy Based Multiplayer Game</p>
+        <div class="hidden-details">
+          <p class="project-skills" style="font-style: italic;">Python | MySQL</p>
+          <hr class="project-hr">
+          <p class="hidden-project-desc"><b style="font-weight: 650; color: var(--secondary); line-height: 16px;">Description: </b>An economy based multiplayer command line game in which the goal is to earn as much money as possible. Features include a shop system, bank system, notification system, stats system and ability to challenge other players to games such as Tic-Tac-Toe.</p>
+
+          <div style="display: flex; flex-direction: row; gap: 14px; margin-top: -20px;">
+            <h4 style="font-style: italic;">Source code will be available soon.</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-item-parent">
+        <img src="assets/images/noimg.png" class="project-icon">
+        <div class="project-details">
+          <h3 class="project-name">Dash</h3>
+        </div>
+        <p class="project-desc">Discord Bot</p>
+        <div class="hidden-details">
+          <p class="project-skills" style="font-style: italic;">C#</p>
+          <hr class="project-hr">
+          <p class="hidden-project-desc"><b style="font-weight: 650; color: var(--secondary); line-height: 16px;">Description: </b>A simple Discord bot made in C# using D#+</p>
+
+          <div style="display: flex; flex-direction: row; gap: 14px; margin-top: -20px;">
+            <h3>
+              <a href="https://github.com/Kavoyaa/dash-bot" class="project-btn" target="_blank" rel="noopener noreferrer">
+              GitHub
+                <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+              </a>
+            </h3>
+          </div>
+        </div>
+      </div>  
+
+      <div class="grid-item-parent">
+        <img src="assets/images/skribbley.png" class="project-icon">
+        <div class="project-details">
+          <h3 class="project-name">Skribbley</h3>
+        </div>
+        <p class="project-desc">Multiplayer Web Game</p>
+        <div class="hidden-details">
+          <p class="project-skills" style="font-style: italic;">HTML | CSS | JavaScript | Python(Flask)</p>
+          <hr class="project-hr">
+          <p class="hidden-project-desc"><b style="font-weight: 650; color: var(--secondary); line-height: 16px;">Description: </b>A multiplayer game based on drawing and guessing. Players can join/create rooms. Each round 1 player will draw and others must try to guess what it is.</p>
+
+          <div style="display: flex; flex-direction: row; gap: 14px; margin-top: -20px;">
+            <h3>
+              <a href="https://github.com/Kavoyaa/skribbley" class="project-btn" target="_blank" rel="noopener noreferrer">
+              GitHub
+                <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+              </a>
+            </h3>
+            <h3>
+              <a href="https://skribbley.onrender.com/" class="project-btn" target="_blank" rel="noopener noreferrer">
+              Website
+                <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+              </a>
+            </h3>
+          </div>
+        </div>
+      </div>
   </section>
+
+    
 </body>
 <script src="assets/index.js"></script>
 </html>
