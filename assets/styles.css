@@ -54,7 +54,7 @@ h3 {
     background: var(--hyperlink);
   }
 
-.primarycolor {
+.primary-color {
     color: var(--primary)
 }
 
@@ -80,6 +80,14 @@ h3 {
 
 .hyperlink:hover {
     color: var(--primary);
+}
+
+.threed-txt {
+    font-size: 54px;
+    font-weight: 750;
+    filter: drop-shadow(1px 1px var(--primary-dark))
+        drop-shadow(1px 1px var(--primary-dark))
+        drop-shadow(5px 6px 8px var(--background-shadow));
 }
 
 .title-txt {
@@ -138,7 +146,7 @@ h3 {
 }
 
 .regular-txt {
-    font-size: 22px;
+    font-size: 21px;
 }
 
 .small-txt {
@@ -188,19 +196,9 @@ h3 {
     margin-right: auto;
     margin-top: -20px;
     max-width: 71ch;
-    padding-left: 2.1rem;
+    padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
-
-.engraved {
-    text-shadow: 1px 1px color-mix(in srgb, #0B0F12 55%, var(--primary) 45%),
-    1px 2px color-mix(in srgb, #0B0F12 55%, var(--primary) 45%),
-    2px 3px color-mix(in srgb, #0B0F12 55%, var(--primary) 45%),
-    3px 4px color-mix(in srgb, #0B0F12 55%, var(--primary) 45%),
-    4px 4px color-mix(in srgb, #0B0F12 55%, var(--primary) 45%),
-    8px 9px 13px black;
-}
-
 
 .transition {
     aspect-ratio: 16/9;
@@ -232,6 +230,99 @@ h3 {
     font-weight: 650;
     font-size: 50px;
     text-align: center;
+}
+
+
+.engraved {
+    text-shadow: -1px -1px 3px black,
+                 -1px -1.5px color-mix(in srgb, var(--secondary) 20%, black 80%),
+                 -1px -1.5px color-mix(in srgb, var(--secondary) 20%, black 80%),
+                 -1px -1.5px color-mix(in srgb, var(--secondary) 20%, black 80%),
+                 -1px -1.5px color-mix(in srgb, var(--secondary) 20%, black 80%),
+                 -1px -1.5px color-mix(in srgb, var(--secondary) 20%, black 80%),
+                 -1px -1.5px color-mix(in srgb, var(--secondary) 20%, black 80%);
+}
+
+
+.hero-cards-headings {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5.6rem;
+    margin-right: 5.6rem;
+    gap: 2.5rem;
+    margin-bottom: -7px;
+}
+
+.hero-cards-layout {
+    display: flex;
+    align-items: stretch;
+    gap: 2.5rem;
+    color: var(--background);
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.currently-working-on {
+    flex: 1;
+    background-color: color-mix(in srgb, var(--secondary) 45%, black 55%);
+    border-radius: 6px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    filter: drop-shadow(1px 1px color-mix(in srgb, var(--secondary) 26%, black 74%))
+            drop-shadow(1px 1px color-mix(in srgb, var(--secondary) 26%, black 74%))
+            drop-shadow(1px 1px color-mix(in srgb, var(--secondary) 26%, black 74%))
+            drop-shadow(1px 1px color-mix(in srgb, var(--secondary) 26%, black 74%))
+            drop-shadow(1px 1px color-mix(in srgb, var(--secondary) 26%, black 74%))
+            drop-shadow(1px 1px color-mix(in srgb, var(--secondary) 26%, black 74%))
+            drop-shadow(4px 9px 16px var(--background-shadow));
+    border: 1px solid color-mix(in srgb, var(--secondary) 28%, black 72%);
+}
+
+.other-projects {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* margin-right: 5rem; */
+}
+
+.other-project {
+    background-color: color-mix(in srgb, var(--secondary) 45%, black 55%);
+    border-radius: 6px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    filter: drop-shadow(1px 1px color-mix(in srgb, var(--secondary) 26%, black 74%))
+            drop-shadow(1px 1px color-mix(in srgb, var(--secondary) 26%, black 74%))
+            drop-shadow(1px 1px color-mix(in srgb, var(--secondary) 26%, black 74%))
+            drop-shadow(1px 1px color-mix(in srgb, var(--secondary) 26%, black 74%))
+            drop-shadow(1px 1px color-mix(in srgb, var(--secondary) 26%, black 74%))
+            drop-shadow(1px 1px color-mix(in srgb, var(--secondary) 26%, black 74%))
+            drop-shadow(4px 9px 16px var(--background-shadow));
+    border: 1px solid color-mix(in srgb, var(--secondary) 28%, black 72%);
+
+}
+
+.currently-working-on:hover {
+    transform: translateY(-4px);
+    transition: 0.2s;
+}
+
+.other-project:hover {
+    transform: translateY(-4px);
+    transition: 0.2s;
+}
+
+.outline {
+    text-shadow: -0.5px -0.5px 0 #000, 0.5px -1px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+}
+
+.working-on {
+    font-weight: 600; 
+    font-size: 24px;
 }
 
 /* for mobiles (portrait mode) */
@@ -268,6 +359,27 @@ h3 {
         transform: translateX(-5%);
     }
 
+    .hero-cards-layout {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .other-projects {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .hero-cards-layout{
+        margin-left: 25px;
+        margin-right: 26px;
+    }
+
+    .working-on {
+        font-weight: 600; 
+        font-size: 21px;
+        text-align: center;
+    }
+
 }
 
 /* for tablets */
@@ -275,6 +387,29 @@ h3 {
     .navbar {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    .hero-cards-layout {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .other-projects {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    /* .currently-working-on {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .other-project {
+        margin-left: 10px;
+        margin-right: 10px;
+    } */
+    .hero-cards-layout{
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
 }
